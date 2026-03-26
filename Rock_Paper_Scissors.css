@@ -152,3 +152,14 @@ body {
     border-radius: 8px;
 }
 
+.ahref{ color: rgb(0, 0, 0);}
+
+.other {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    background-color: rgb(37, 197, 197);
+    padding: 16px 32px;
+    border-radius: 10px;
+    margin-top: 64px;
+}
