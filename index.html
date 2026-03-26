@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./Rock_Paper_Scissors.css" />
+  </head>
+
+  <body>
+    <header class="main-header-game" id="main-header-game">
+      <main class="main-section">
+        <center>
+        <p class="title">Rock Paper Scissors</p>
+       
+        <img style="border-radius: 50px;" src="./Fotos/paper-rock-scissors.jpg" width="300px" alt="">
+        
+          </center>
+
+        <!-- Ab hier ist Session 9 -->
+        <p class="js-score score"></p>
+         
+        <!-- Session 9.3 -->
+        <div class="player-computer">
+          <p class="js-moves moves"></p>
+          <p class="js-result result"></p>
+          <p class="js-moves-comuter moves-comuter"></p>
+          
+        </div>
+       
+        
+
+        <!-- // Button 4 Reset Score  -->
+        <button
+          onclick="
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            // weil wir Objects anwenden können wir mit score.wins zugreifen und zurüclsetzen
+            // Reset und speicher von localStorage löschen
+            localStorage.removeItem('score');
+            updateScoreElement();
+          "
+          class="reset-score-button"
+        >
+          Reset Score
+        </button>
+      </main>
+
+      <!-- Part 2 -->
+
+      <section class="buttons-area">
+        <div>
+          <!-- // Button 1  Rock-->
+
+          <button onclick="playGame('rock')" class="move-button">
+            <img src="./Fotos/rock-emoji.png" alt="" class="move-icon" />
+          </button>
+
+          <!-- // Button 2  Paper-->
+
+          <button onclick="playGame('paper')" class="move-button">
+            <img src="./Fotos/paper-emoji.png" alt="" class="move-icon" />
+          </button>
+
+          <!-- // Button 3 Scissors  -->
+
+          <button onclick="playGame('scissors')" class="move-button">
+            <img src="./Fotos/scissors-emoji.png" alt="" class="move-icon" />
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <script src="./Rock_Paper_Scissors.js"></script>
+  </body>
+</html>

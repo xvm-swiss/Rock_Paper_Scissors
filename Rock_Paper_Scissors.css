@@ -1,0 +1,154 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+     background-color: black;
+     color: aliceblue;
+     font-family: Arial;
+
+ }
+
+
+
+ .main-section {
+    display: grid;
+    justify-content: center;
+    padding: 16px;
+    
+    /* border: 1px solid white; */
+    /*background-color: rgba(46, 211, 140, 0.447);*/
+ }
+
+
+
+.title {
+     font-size: 26px;
+     font-weight: bold;
+     display: block;
+     justify-self: center;
+     font-family: monospace;
+     
+ }
+
+
+.score {
+     margin-top: 32px;
+     font-size: 24px;
+     margin-bottom: 16px;
+     /* background-color: aquamarine; */
+
+ }
+
+/* Beid Hand oben und in der Miette auch */
+.player-computer {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    /* background-color: rgba(240, 248, 255, 0.445); */
+}
+
+
+/* Hand Icon beide oben */
+.move-icon {
+     height: 50px;
+
+ }
+
+
+
+/* Hintergrund von die beide obere Hand */
+.moves {
+    /* background-color: blue; */
+    padding: 8px 12px;
+
+
+}
+
+
+ /* Player Hand */
+.moves {
+    /* background-color: rgb(255, 0, 136); */
+    padding: 8px 12px;
+}
+
+
+.result {
+     
+     font-size: 35px;
+     font-weight: bold;
+     margin-top: 8px;
+     margin-bottom: 8px;
+     /* background-color: rgba(255, 228, 196, 0.605); */
+ }
+
+ /* System Hintergund  */
+.moves-comuter {
+    /* background-color: blue; */
+    padding: 8px;
+}
+
+
+
+
+/* Reset Score */
+.reset-score-button {
+     /* background-color: white; */
+     border: none;
+     border-radius: 6px;
+     font-size: 12px;
+     padding: 8px 15px;
+     cursor: pointer;
+     margin-top: 16px;
+ }
+
+
+.reset-score-button:hover {
+    background-color: rgb(47, 193, 22);
+      /* Optional: weicher Übergang */
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+/* Alle untere Hand Feld */
+ .buttons-area {
+    display: grid;
+    justify-content: center;
+
+    /* border: 1px solid white; */
+    padding: 16px;
+    margin-top: 32px;
+
+ }
+
+
+ /* Alle untere Hand */
+ .move-button {
+     background-color: transparent;
+     outline: 3px solid white;
+     width: 80px;
+     height: 80px;
+     border-radius: 40px;
+     margin-right: 10px;
+     cursor: pointer;
+       /* Optional: weicher Übergang */
+    transition: background-color 0.1s ease-in-out;
+ }
+
+.move-button:hover {
+    background-color: rgb(47, 193, 22);
+      /* Optional: weicher Übergang */
+    transition: background-color 0.3s ease;
+
+}
+
+.js-score{
+
+    border: 1px white solid;
+    padding: 4px 24px;
+    border-radius: 8px;
+}
+
