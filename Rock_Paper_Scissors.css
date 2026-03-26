@@ -52,7 +52,7 @@ body {
 
 /* Hand Icon beide oben */
 .move-icon {
-     height: 50px;
+     width: 50px;
 
  }
 
@@ -117,8 +117,8 @@ body {
  .buttons-area {
     display: grid;
     justify-content: center;
-
-    /* border: 1px solid white; */
+    /* background-color: beige; */
+    /* border: 1px solid white;  */
     padding: 16px;
     margin-top: 32px;
 
@@ -152,14 +152,24 @@ body {
     border-radius: 8px;
 }
 
-.ahref{ color: rgb(0, 0, 0);}
+.ahref{ color: rgb(15, 42, 173);}
 
 .other {
+    font-family: monospace;
     display: flex;
     justify-content: center;
-    width: 200px;
-    background-color: rgb(37, 197, 197);
-    padding: 16px 32px;
+    width: 180px;
+    background-color: rgb(40, 43, 215);
+    color: aliceblue;
+    padding: 8px 16px;
     border-radius: 10px;
     margin-top: 64px;
+    border-color: blue;
+}
+
+.other:hover {
+    background-color: rgba(59, 62, 220, 0.584);
+      /* Optional: weicher Übergang */
+    transition: background-color 0.3s ease;
+
 }

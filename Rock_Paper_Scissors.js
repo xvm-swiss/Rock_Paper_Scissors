@@ -28,30 +28,30 @@ function playGame(playerMove) {
     let result = "";
     // Scissors
     if (playerMove === "scissors") {
-        if (computerMove === "Rock") {
+        if (computerMove === "rock") {
             result = "You<br>Lose";
-        } else if (computerMove === "Paper") {
+        } else if (computerMove === "paper") {
             result = "You<br>Win";
-        } else if (computerMove === "Scissors") {
+        } else if (computerMove === "scissors") {
             result = "You<br>Tie";
         }
 
         // Paper
     } else if (playerMove === "paper") {
-        if (computerMove === "Rock") {
+        if (computerMove === "rock") {
             result = "You<br>Win";
-        } else if (computerMove === "Paper") {
+        } else if (computerMove === "paper") {
             result = "You<br>Tie";
-        } else if (computerMove === "Scissors") {
+        } else if (computerMove === "scissors") {
             result = "You<br>Lose";
         }
         // Rock
     } else if (playerMove === "rock") {
-        if (computerMove === "Rock") {
+        if (computerMove === "rock") {
             result = "You<br>Tie";
-        } else if (computerMove === "Paper") {
+        } else if (computerMove === "paper") {
             result = "You<br>Lose";
-        } else if (computerMove === "Scissors") {
+        } else if (computerMove === "scissors") {
             result = "You<br>Win";
         }
     }
@@ -83,12 +83,12 @@ function playGame(playerMove) {
 
           // select Cumputer move
     document.querySelector(".js-moves-comuter").innerHTML =
-        `<img src="./Fotos/${computerMove}-emoji.png" class="move-icon" alt="">
+        `<img src="./fotos/${computerMove}-emoji.png" class="move-icon" alt="ComputerMove">
         <br><h5>System</h5>`;
 
           // select Player move
     document.querySelector(".js-moves").innerHTML =
-        `<img src="./Fotos/${playerMove}-emoji.png" class="move-icon" alt="">
+        `<img src="./fotos/${playerMove}-emoji.png" class="move-icon" alt="playerMove">
         <br><h5>Player</h5>`;
 }
 
@@ -108,11 +108,11 @@ function pickComputerMove() {
     let computerMove = ""; // das heisst global veriable
 
     if (randomNumber >= 0 && randomNumber < 1 / 3) {
-        computerMove = "Rock";
+        computerMove = "rock";
     } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-        computerMove = "Paper";
+        computerMove = "paper";
     } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-        computerMove = "Scissors";
+        computerMove = "scissors";
     }
 
     return computerMove; // Das heisst: Returning a value from a function
